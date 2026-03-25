@@ -45,7 +45,7 @@ ssh -o StrictHostKeyChecking=no -i ${SSH_KEY_FILE} "$REMOTE_SSH_USER@$IP" "cd ${
 && ${VIRTUAL_ENVIRONMENT}/bin/python \
 -m gunicorn \
 --workers 1 \
---bind 127.0.0.1:${PORT} \
+--bind 0.0.0.0:${PORT} \
 automationdashboard:app \
 --daemon \
 --reload \
