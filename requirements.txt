@@ -1,4 +1,18 @@
-Flask==2.2.2
-gunicorn==20.1.0
-pylint==2.15.8
+
+# Core Framework
+Flask==3.0.3
+Werkzeug==3.0.3
+Jinja2==3.1.4
 PyMySQL==1.0.2
+
+# Production Server
+gunicorn==22.0.0
+
+# Development & Linting
+pylint==3.2.2
+astroid==3.2.2
+
+# Utilities
+MarkupSafe==2.1.5
+itsdangerous==2.2.0
+click==8.1.7
