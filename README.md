@@ -6,6 +6,7 @@ A modern, real-time **QA automation dashboard** built with Flask, HTMX, and Tail
 ✅ Live staging and production environments  
 ✅ Designed for real-world QA workflows and teaching automation best practices
 
+
 ---
 
 ## 🌐 Live Demos
