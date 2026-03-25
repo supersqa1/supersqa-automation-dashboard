@@ -8,7 +8,7 @@ on:
 
 env:
   PY_IMAGE: python:3.11
-  APP_DIR: /root/projects/automation_dashboard
+  APP_DIR: /root/Projects/automation_dashboard
 
 jobs:
   code_quality:
@@ -33,8 +33,8 @@ jobs:
     environment: staging
     env:
       ENVIRONMENT: staging
-      APP_INSTANCE_DIR: /root/projects/automation_dashboard/staging
-      VIRTUAL_ENVIRONMENT: /root/projects/automation_dashboard/staging/venv_dashboard
+      APP_INSTANCE_DIR: /root/Projects/automation_dashboard/staging
+      VIRTUAL_ENVIRONMENT: /root/Projects/automation_dashboard/staging/venv_dashboard
       PORT: 9099
       REMOTE_HOST_IP: ${{ secrets.REMOTE_HOST_IP }}
       STAGING_DB_HOST: ${{ secrets.STAGING_DB_HOST }}
@@ -75,8 +75,8 @@ jobs:
     environment: production
     env:
       ENVIRONMENT: prod
-      APP_INSTANCE_DIR: /root/projects/automation_dashboard/prod
-      VIRTUAL_ENVIRONMENT: /root/projects/automation_dashboard/prod/venv_dashboard
+      APP_INSTANCE_DIR: /root/Projects/automation_dashboard/prod
+      VIRTUAL_ENVIRONMENT: /root/Projects/automation_dashboard/prod/venv_dashboard
       PORT: 9098
       REMOTE_HOST_IP: ${{ secrets.REMOTE_HOST_IP }}
       PROD_DB_HOST: ${{ secrets.PROD_DB_HOST }}
