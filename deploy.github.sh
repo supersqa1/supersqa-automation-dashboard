@@ -41,6 +41,7 @@ ssh -o StrictHostKeyChecking=no -i ${SSH_KEY_FILE} "$REMOTE_SSH_USER@$IP" "cd ${
 && source variables.sh \
 && sleep 5 \
 && env \
+&& ${VIRTUAL_ENVIRONMENT}/bin/python -m pip install -r ${APP_INSTANCE_DIR}/requirements.txt \
 && ${VIRTUAL_ENVIRONMENT}/bin/python \
 -m gunicorn \
 --workers 1 \
